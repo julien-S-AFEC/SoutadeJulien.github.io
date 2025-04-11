@@ -11,29 +11,6 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <style>
-        .left-side {
-            background-color: rgb(46, 46, 46);
-            padding-bottom: 30em;
-            margin-top: 1em;
-            margin-left: 4em;
-            margin-right: 0;
-            border-radius: 1em;
-        }
-
-        .centered-txt {
-            text-align: center;
-        }
-
-        .centered-img {
-            padding-left: 20%;
-        }
-
-        .round-img {
-            height: 15em;
-            width: auto;
-            border-radius: 50%;
-        }
-
         .profil-img {
             width: 200px;
             height: auto;
@@ -65,81 +42,80 @@
             border-radius: 9px;
         }
 
-        .footer {
-            height: 100vh;
-            background-color: black;
-        }
-
         .skill-img {
             height: 80px;
             width: auto;
         }
 
-        /*# sourceMappingURL=style.css.map */
+        @media screen and (max-width: 752px) {
+            .skill-img {
+                height: 40px;
+                width: auto;
+            }
+
+            /*# sourceMappingURL=style.css.map */
     </style>
 </head>
 
 <body>
-    <div class="container-fluid p-5 body">
-        <div class="row">
-            <div class="col p-4 column-back text-center ">
-                <div class="d-flex flex-column gap-3">
-                    <img src=" resources/img/photo.jpg" class="img-fluid profil-img" alt="Soutade-julien-image">
-                    <div class="d-flex flex-column gap-3 text-white">
-                        06 67 21 76 03
-                        <br>
-                        8 Rue Aristide Briand
-                        <br>
-                        16340 L'Isle d'Espagnac
-                        <div class="flex">
-                            <a href="https://github.com/SoutadeJulien" target="_blank">
-                                <img class="img-fluid" src="resources/icons/github.png" alt="github-logo" width="50"
-                                    height="auto">
+    <div class="p-5 body">
+        <div class="d-sm-flex flex-row gap-3 justify-content-around">
+            <div class="d-flex flex-column gap-3 p-4 text-center column-back">
+                <img src=" resources/img/photo.jpg" class="img-fluid profil-img" alt="Soutade-julien-image">
+                <div class="d-flex flex-column gap-3 text-white">
+                    06 67 21 76 03
+                    <br>
+                    8 Rue Aristide Briand
+                    <br>
+                    16340 L'Isle d'Espagnac
+                    <div class="flex">
+                        <a href="https://github.com/SoutadeJulien" target="_blank">
+                            <img class="img-fluid" src="resources/icons/github.png" alt="github-logo" width="50"
+                                height="auto">
+                        </a>
+                        <a href="https://www.linkedin.com/in/julien-soutade-gastaud/" target="_blank">
+                            <img class="img-fluid" src="resources/icons/linkedin.png" alt="linkedin-logo" width="50"
+                                height="auto">
+                        </a>
+                    </div>
+                    <div>
+                        <p>
+                            <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#who-i-am-collapse"
+                                role="button" aria-expanded="false" aria-controls="who-i-am-collapse">
+                                Who I Am ?
                             </a>
-                            <a href="https://www.linkedin.com/in/julien-soutade-gastaud/" target="_blank">
-                                <img class="img-fluid" src="resources/icons/linkedin.png" alt="linkedin-logo"
-                                    width="50" height="auto">
-                            </a>
-                        </div>
-                        <div>
-                            <p>
-                                <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#who-i-am-collapse"
-                                    role="button" aria-expanded="false" aria-controls="who-i-am-collapse">
-                                    Who I Am ?
-                                </a>
-                            </p>
-                            <div class="collapse" id="who-i-am-collapse">
-                                <div class="text-center text-gray-600">
-                                    I’m a passionate full-stack developer dedicated to solving complex problems
-                                    through innovative coding solutions.
-                                </div>
+                        </p>
+                        <div class="collapse" id="who-i-am-collapse">
+                            <div class="text-center text-gray-600">
+                                I’m a passionate full-stack developer dedicated to solving complex problems
+                                through innovative coding solutions.
                             </div>
-                            <p class="d-inline-flex gap-1">
-                                <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#why-collapse"
-                                    role="button" aria-expanded="false" aria-controls="why-collapse">
-                                    Why I Love It ?
-                                </a>
-                            </p>
-                            <div class="collapse" id="why-collapse">
-                                <div class="text-center text-gray-600">
-                                    The thrill of tackling technical challenges and creating meaningful
-                                    applications.
-                                    The satisfaction of building scalable, efficient, and user-friendly systems.
-                                    Continuous learning and staying updated with the latest technologies.
-                                    <br><br>
-                                    Problem-Solving Approach:
-                                    <br>
-                                    Break down complex problems into smaller, manageable parts.
-                                    Prioritize efficiency and scalability in solutions.
-                                    Collaborate with cross-functional teams to deliver optimal results.
-                                </div>
+                        </div>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-outline-light" data-bs-toggle="collapse" href="#why-collapse"
+                                role="button" aria-expanded="false" aria-controls="why-collapse">
+                                Why I Love It ?
+                            </a>
+                        </p>
+                        <div class="collapse" id="why-collapse">
+                            <div class="text-center text-gray-600">
+                                The thrill of tackling technical challenges and creating meaningful
+                                applications.
+                                The satisfaction of building scalable, efficient, and user-friendly systems.
+                                Continuous learning and staying updated with the latest technologies.
+                                <br><br>
+                                Problem-Solving Approach:
+                                <br>
+                                Break down complex problems into smaller, manageable parts.
+                                Prioritize efficiency and scalability in solutions.
+                                Collaborate with cross-functional teams to deliver optimal results.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-10 px-5">
-                <h1 class="h1 text-center">
+            <div class="flex-column w-100">
+                <h1 class="h1 text-center py-3">
                     Soutadé-Gastaud Julien
                 </h1>
                 <h2 class="h2 text-center py-1">
@@ -211,6 +187,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
